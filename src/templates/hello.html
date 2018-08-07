@@ -1,0 +1,20 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'css/hello.css' %}">
+
+<h2 id="title">Hello World App</h2>
+
+<div class="container">
+    <form action="" method="post" id="greeting-form">
+        <!-- Simple instruction for the user -->
+        {% csrf_token %}
+        <h3>Please type your name below.<h3>
+
+        <!-- Django forms to make possible dynamic data -->
+        {{ form }}
+        <input id="submit" type="submit" value="Submit">
+    </form>
+</div>
+
+<script type="text/javascript">window.CSRF_TOKEN = "{{ csrf_token }}";</script>
+<script src="{% static "scripts/hello.js" %}"></script>

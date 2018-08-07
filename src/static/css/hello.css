@@ -1,0 +1,50 @@
+#title{
+    position: relative;
+    top: 35%;
+    font-family: comic;
+}
+
+body {
+    background-color: lightgrey;
+}
+
+h2 {
+    text-align: center;
+}
+
+label {
+    margin-right: 5px;
+}
+
+input {
+    border: 1px solid #999;
+    border-radius: 5px;
+    padding-left: 10px;
+    height: 25px;
+    vertical-align: bottom;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid lightblue;
+    border-radius: 5px;
+}
+
+input[type=submit] {
+    background-color: blue;
+    align-content: center;
+    color: white;
+    height: 25px;
+}
+
+.container {
+    padding: 0.5%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    background-color: #A0A0A0;
+    -webkit-box-shadow: 1px 1px 5px -1px #6b6b6b;
+    box-shadow: 1px 1px 5px -1px #6b6b6b;
+}
